@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Bishop.ico">
+    <title>Мат в 3 хода</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        outline: none;
+    }
+
+    button {
+        background-color: aqua;
+        text-align: center;
+        border-radius: 3px;
+        border-color: orange;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    header {
+        text-align: center;
+        background-color: rgb(153, 153, 153, 0.14);
+        font-weight: bold;
+    }
+
+    main {
+        text-align: center;
+    }
+
+    body {
+        background: url(https://lichess1.org/assets/images/background/landscape.jpg);
+    }
+
+    .fixed-bar {
+        transition: 0.7s ease;
+        transition-property: transform, box-shadow;
+        height: 50px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+        transform: translateY(-100%);
+        padding: 10px;
+        font-weight: bold;
+    }
+
+    .fixed-bar.isShown {
+        box-shadow: 0 0 10px rgb(0, 208, 255);
+        transform: translateY(0);
+    }
+
+
+    .fixed-bar {
+        background: #0099ff;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+    }
+
+    li {
+        margin-right: 10px;
+        margin: auto;
+    }
+
+    a {
+        color: #fff;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+        align-items: center;
+        display: flex;
+    }
+
+    .promeshutok {
+        height: 30px;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Мат в 3 хода</h1>
+    </header>
+    <div class="promeshutok"></div>
+    <div class="fixed-bar">
+        <ul>
+            <li><a href="./index.html"><img src="./Logo_linechess.png" alt="Логотип" class="logo"></a></li>
+            <li><a href="./index.html">Главная страница</a></li>
+            <li><a href="./training_checkmate_1.html">Мат в 1 ход</a></li>
+            <li><a href="./training_checkmate_2.html">Мат в 2 хода</a></li>
+            <li><a href="./pawn_finaly.html">Пешечные окончания</a></li>
+            <li><a href="./analis_position.html">Оценка позиции</a></li>
+        </ul>
+    </div>
+    <main>
+        <button onclick="document.location.href='./Checkmate_3/train_1.html';"><big>Задача №1</big></button><br><br>
+        <button onclick="document.location.href='./Checkmate_3/train_2.html';"><big>Задача №2</big></button><br><br>
+        <button onclick="document.location.href='./Checkmate_3/train_3.html';"><big>Задача №3</big></button><br><br>
+        <button onclick="document.location.href='./Checkmate_3/train_4.html';"><big>Задача №4</big></button><br><br>
+        <button onclick="document.location.href='./Checkmate_3/train_5.html';"><big>Задача №5</big></button><br><br>
+        <button onclick="document.location.href='./Checkmate_3/train_6.html';"><big>Задача №6</big></button><br><br>
+        <button onclick="document.location.href='./Checkmate_3/train_7.html';"><big>Задача №7</big></button><br><br>
+        <button onclick="document.location.href='./Checkmate_3/train_8.html';"><big>Задача №8</big></button><br><br>
+        <button onclick="document.location.href='./Checkmate_3/train_9.html';"><big>Задача №9</big></button><br><br>
+        <button onclick="document.location.href='./Checkmate_3/train_10.html';"><big>Задача №10</big></button><br><br>
+        <button onclick="document.location.href='./Checkmate_3/train_11.html';"><big>Задача №11</big></button><br><br>
+        <button onclick="document.location.href='./Checkmate_3/train_12.html';"><big>Задача №12</big></button><br><br>
+        <button onclick="document.location.href='./Checkmate_3/train_13.html';"><big>Задача №13</big></button><br><br>
+        <button onclick="document.location.href='./Checkmate_3/train_14.html';"><big>Задача №14</big></button><br><br>
+        <button onclick="document.location.href='./Checkmate_3/train_15.html';"><big>Задача №15</big></button><br><br>
+        <button onclick="document.location.href='./Checkmate_3/train_16.html';"><big>Задача №16</big></button><br><br>
+        <button onclick="document.location.href='./Checkmate_3/train_17.html';"><big>Задача №17</big></button><br><br>
+        <button onclick="document.location.href='./Checkmate_3/train_18.html';"><big>Задача №18</big></button><br><br>
+        <button onclick="document.location.href='./Checkmate_3/train_19.html';"><big>Задача №19</big></button><br><br>
+        <button onclick="document.location.href='./Checkmate_3/train_20.html';"><big>Задача №20</big></button><br><br>
+        <button onclick="document.location.href='./Checkmate_3/train_21.html';"><big>Задача №21</big></button><br><br>
+        <button onclick="document.location.href='./Checkmate_3/train_22.html';"><big>Задача №22</big></button><br><br>
+        <button onclick="document.location.href='./Checkmate_3/train_23.html';"><big>Задача №23</big></button><br><br>
+        <button onclick="document.location.href='./Checkmate_3/train_24.html';"><big>Задача №24</big></button><br><br>
+        <button onclick="document.location.href='./Checkmate_3/train_25.html';"><big>Задача №25</big></button><br><br>
+        <button onclick="document.location.href='./Checkmate_3/train_26.html';"><big>Задача №26</big></button><br><br>
+        <button onclick="document.location.href='./Checkmate_3/train_27.html';"><big>Задача №27</big></button><br><br>
+        <button onclick="document.location.href='./Checkmate_3/train_28.html';"><big>Задача №28</big></button><br><br>
+        <button onclick="document.location.href='./Checkmate_3/train_29.html';"><big>Задача №29</big></button><br><br>
+        <button onclick="document.location.href='./Checkmate_3/train_30.html';"><big>Задача №30</big></button><br><br>
+    </main>
+    <script>
+        const fixedBar = document.querySelector('.fixed-bar');
+
+        const toggleBar = function () {
+            let isShown = window.pageYOffset > window.innerHeight / 10;
+            fixedBar.classList.toggle('isShown', isShown);
+        }
+
+        toggleBar();
+        window.addEventListener('scroll', toggleBar);
+    </script>
+</body>
+
+
+</html>

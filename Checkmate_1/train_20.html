@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мат в 1 ход</title>
+    <style>
+        body {
+            background: url(https://lichess1.org/assets/images/background/landscape.jpg);
+        }
+
+        header {
+            text-align: center;
+            background-color: rgba(72, 72, 72, 0.14);
+            font-weight: bold;
+        }
+
+        main {
+            background-color: rgba(153, 153, 153, 0.14);
+            text-align: center;
+        }
+
+        .probel {
+            height: 30px;
+        }
+
+        .promeshutok {
+            height: 10px;
+        }
+
+        p {
+            font-weight: bold;
+        }
+
+        textarea {
+            resize: none;
+            width: 200px;
+            height: 50px;
+        }
+
+        button {
+            background-color: aqua;
+            text-align: center;
+            border-radius: 3px;
+            border-color: orange;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        #result {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="probel"></div>
+    <main>
+        <h1>Мат в один ход</h1>
+        <h2>Задача №20</h2>
+        <div>
+            <img src='https://i.postimg.cc/65BpPBpt/20.png' width="400px" height="400px">
+            <p>Ход белых. Как бы вы сыграли?</p>
+
+            <textarea name="answer" id="answer"
+                placeholder="Введите ответ на задачу: Писать с большой буквы Пример: Le4" maxlength="3"></textarea>
+        </div>
+        <div class="promeshutok"></div>
+        <button onclick="checkAnswer()">Проверить ответ</button>
+        <p id="result"></p>
+        <button onclick="document.location.href='./train_19.html';">Предыдущая задача</button>
+        <button onclick="document.location.href='./train_21.html';">Следующая задача</button>
+    </main>
+
+    <script>
+        function checkAnswer() {
+            const correctAnswer = 'D7';  // правильный ответ
+            const userAnswer = document.getElementById('answer').value.trim();
+
+            if (userAnswer === correctAnswer) {
+                document.getElementById('result').innerText = 'Правильно!';
+                document.getElementById('result').style.color = 'green';
+            } else {
+                document.getElementById('result').innerText = 'Неправильно. Попробуйте снова.';
+                document.getElementById('result').style.color = 'red';
+            }
+        }
+    </script>
+</body>
+
+</html>

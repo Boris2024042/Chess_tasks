@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Bishop.ico">
+    <title>Задачи</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        outline: none;
+    }
+
+    body {
+        background: url(https://lichess1.org/assets/images/background/landscape.jpg);
+    }
+
+    header {
+        text-align: center;
+        background-color: rgb(153, 153, 153, 0.14);
+        font-weight: bold;
+        position: relative;
+    }
+
+    main {
+        text-align: center;
+    }
+
+    button {
+        background-color: aqua;
+        text-align: center;
+        border-radius: 3px;
+        border-color: orange;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .promeshutok {
+        height: 20px;
+    }
+
+    table {
+        background-color: #a2a9b1;
+        margin: auto;
+    }
+
+    #notetion {
+        font-family: Georgia, 'Times New Roman', Times, serif
+    }
+
+    img {
+        width: 40px;
+        height: 25px;
+    }
+
+    .flag {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
+    }
+</style>
+
+<body>
+    <header><big><big><big>Шахматные задачи</big></big></big><a href="./en.Chess_tasks/en.index.html"><img
+                src="./uk.png" alt="English" class="flag"></a></header>
+    <div class="promeshutok"></div>
+    <main>
+        <button onclick="document.location.href='./training_checkmate_1.html';"><big>Мат в 1 ход</big></button><br><br>
+        <button onclick="document.location.href='./training_checkmate_2.html';"><big>Мат в 2 хода</big></button><br><br>
+        <button onclick="document.location.href='./training_checkmate_3.html';"><big>Мат в 3 хода</big></button><br><br>
+        <button onclick="document.location.href='./analis_position.html';"><big>Оценка позиции</big></button><br><br>
+        <button onclick="document.location.href='./pawn_finaly.html';"><big>Пешечные окончания</big></button>
+        <div class="promeshutok"></div>
+        <div>
+            <a>
+                <p id="notetion">
+                    <h3>Шахматная нотация</h3>
+                </p>
+            </a>
+        </div>
+        <div class="promeshutok"></div>
+        <table border="5">
+            <thead>
+                <tr>
+                    <th>Название фигуры</th>
+                    <th>Обозначение в записи</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Король ♔♚</td>
+                    <td>K</td>
+                </tr>
+                <tr>
+                    <td>Ферзь ♕♛</td>
+                    <td>Q</td>
+                </tr>
+                <tr>
+                    <td>Ладья ♖♜</td>
+                    <td>R</td>
+                </tr>
+                <tr>
+                    <td>Слон ♗♝</td>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    <td>Конь ♘♞</td>
+                    <td>N</td>
+                </tr>
+                <tr>
+                    <td>Пешка ♙♟</td>
+                    <td>Нет буквы</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+
+</html>
