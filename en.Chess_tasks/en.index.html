@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Bishop.ico">
+    <title>Tasks</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        outline: none;
+    }
+
+    body {
+        background: url(https://lichess1.org/assets/images/background/landscape.jpg);
+    }
+
+    header {
+        text-align: center;
+        background-color: rgb(153, 153, 153, 0.14);
+        font-weight: bold;
+        position: relative;
+    }
+
+    main {
+        text-align: center;
+    }
+
+    button {
+        background-color: aqua;
+        text-align: center;
+        border-radius: 3px;
+        border-color: orange;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .promeshutok {
+        height: 20px;
+    }
+
+    table {
+        background-color: #a2a9b1;
+        margin: auto;
+    }
+
+    #notetion {
+        font-family: Georgia, 'Times New Roman', Times, serif
+    }
+
+    img {
+        width: 40px;
+        height: 25px;
+    }
+
+    .flag {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
+    }
+</style>
+
+<body>
+    <header><big><big><big>Chess tasks</big></big></big><a href="../index.html"><img src="../ru.png" alt="Russian"
+                class="flag"></a>
+    </header>
+    <div class="promeshutok"></div>
+    <main>
+
+
+        <button onclick="document.location.href='./en.training_checkmate_1.html';"><big>Checkmate in 1
+                move</big></button><br><br>
+        <button onclick="document.location.href='./en.training_checkmate_2.html';"><big>Checkmate in 2
+                moves</big></button><br><br>
+        <button onclick="document.location.href='./en.training_checkmate_3.html';"><big>Checkmate in 3
+                moves</big></button><br><br>
+        <button onclick="document.location.href='./en.analis_position.html';"><big>Position
+                assessment</big></button><br><br>
+        <button onclick="document.location.href='./en.pawn_finaly.html';"><big>Pawn endings</big></button>
+        <div class="promeshutok"></div>
+        <div>
+            <a>
+                <p id="notetion">
+                    <h3>Chess notation</h3>
+                </p>
+            </a>
+        </div>
+        <div class="promeshutok"></div>
+        <table border="5">
+            <thead>
+                <tr>
+                    <th>Name figures</th>
+                    <th>Tagging in records</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>King ♔♚</td>
+                    <td>K</td>
+                </tr>
+                <tr>
+                    <td>Queen ♕♛</td>
+                    <td>Q</td>
+                </tr>
+                <tr>
+                    <td>Rook ♖♜</td>
+                    <td>R</td>
+                </tr>
+                <tr>
+                    <td>Bishop ♗♝</td>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    <td>Knight ♘♞</td>
+                    <td>N</td>
+                </tr>
+                <tr>
+                    <td>Pawn ♙♟</td>
+                    <td>There is no letter</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+
+</html>

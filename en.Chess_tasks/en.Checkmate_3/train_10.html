@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мат в 3 хода</title>
+    <style>
+        body {
+            background: url(https://lichess1.org/assets/images/background/landscape.jpg);
+        }
+
+        header {
+            text-align: center;
+            background-color: rgba(72, 72, 72, 0.14);
+            font-weight: bold;
+        }
+
+        main {
+            background-color: rgba(153, 153, 153, 0.14);
+            text-align: center;
+        }
+
+        .probel {
+            height: 30px;
+        }
+
+        .promeshutok {
+            height: 10px;
+        }
+
+        p {
+            font-weight: bold;
+        }
+
+        textarea {
+            resize: none;
+            width: 250px;
+            height: 60px;
+        }
+
+        button {
+            background-color: aqua;
+            text-align: center;
+            border-radius: 3px;
+            border-color: orange;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        #result {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="probel"></div>
+    <main>
+        <h1>Мат в 3 хода</h1>
+        <h2>Задача №10</h2>
+        <div>
+            <img src='https://i.postimg.cc/yNmMD1xW/10-3.png' width="400px" height="400px">
+            <p>Ход белых. Как бы вы сыграли?</p>
+
+            <textarea name=" answer" id="answer"
+                placeholder="Введите ответ на задачу: Писать с большой буквы, без ходов соперника. Пример: Le4 Qb2 Nf6"
+                maxlength="15"></textarea>
+        </div>
+        <div class="promeshutok"></div>
+        <button onclick="checkAnswer()">Проверить ответ</button>
+        <p id="result"></p>
+        <button onclick="document.location.href='./train_9.html';">Предыдущая задача</button>
+        <button onclick="document.location.href='./train_11.html';">Следующая задача</button>
+    </main>
+
+    <script>
+        function checkAnswer() {
+            const correctAnswer = 'Bb5 Ne6 Rf8';  // правильный ответ
+            const userAnswer = document.getElementById('answer').value.trim();
+
+            if (userAnswer === correctAnswer) {
+                document.getElementById('result').innerText = 'Правильно!';
+                document.getElementById('result').style.color = 'green';
+            } else {
+                document.getElementById('result').innerText = 'Неправильно. Попробуйте снова.';
+                document.getElementById('result').style.color = 'red';
+            }
+        }
+    </script>
+</body>
+
+</html>

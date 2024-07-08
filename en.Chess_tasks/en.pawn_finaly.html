@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Bishop.ico">
+    <title>Pawn endings</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        outline: none;
+    }
+
+    body {
+        background: url(https://lichess1.org/assets/images/background/landscape.jpg);
+        height: 5000px;
+    }
+
+    header {
+        text-align: center;
+        background-color: rgb(153, 153, 153, 0.14);
+        font-weight: bold;
+    }
+
+    main {
+        text-align: center;
+    }
+
+    button {
+        background-color: aqua;
+        text-align: center;
+        border-radius: 3px;
+        border-color: orange;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .promeshutok {
+        height: 30px;
+    }
+
+    .fixed-bar {
+        transition: 0.7s ease;
+        transition-property: transform, box-shadow;
+        height: 50px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+        transform: translateY(-100%);
+        padding: 10px;
+        font-weight: bold;
+    }
+
+    .fixed-bar.isShown {
+        box-shadow: 0 0 10px rgb(0, 208, 255);
+        transform: translateY(0);
+    }
+
+
+    .fixed-bar {
+        background: #0099ff;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+    }
+
+    li {
+        margin-right: 10px;
+        margin: auto;
+    }
+
+    a {
+        color: #fff;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+        align-items: center;
+        display: flex;
+    }
+</style>
+
+<body>
+    <header><big><big><big>Pawn endings</big></big></big></header>
+    <div class="promeshutok"></div>
+    <div class="fixed-bar">
+        <ul>
+            <li><a href="./en.index.html"><img src="./Logo_linechess.png" alt="Логотип" class="logo"></a></li>
+            <li><a href="./en.index.html">Main page</a></li>
+            <li><a href="./en.training_checkmate_1.html">Checkmate in 1 move</a></li>
+            <li><a href="./en.training_checkmate_2.html">Checkmate in 2 moves</a></li>
+            <li><a href="./en.training_checkmate_3.html">Checkmate in 3 moves</a></li>
+            <li><a href="./en.analis_position.html">Position assessment</a></li>
+        </ul>
+    </div>
+    <main>
+        <h1><big><big>In working...</big></big></h1>
+    </main>
+    <script>
+        const fixedBar = document.querySelector('.fixed-bar');
+
+        const toggleBar = function () {
+            let isShown = window.pageYOffset > window.innerHeight / 10;
+            fixedBar.classList.toggle('isShown', isShown);
+        }
+
+        toggleBar();
+        window.addEventListener('scroll', toggleBar);
+    </script>
+</body>
+
+</html>

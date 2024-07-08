@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkmate in 1 move</title>
+    <style>
+        body {
+            background: url(https://lichess1.org/assets/images/background/landscape.jpg);
+        }
+
+        header {
+            text-align: center;
+            background-color: rgba(72, 72, 72, 0.14);
+            font-weight: bold;
+        }
+
+        main {
+            background-color: rgba(153, 153, 153, 0.14);
+            text-align: center;
+        }
+
+        .probel {
+            height: 30px;
+        }
+
+        .promeshutok {
+            height: 10px;
+        }
+
+        p {
+            font-weight: bold;
+        }
+
+        textarea {
+            resize: none;
+            width: 200px;
+            height: 50px;
+        }
+
+        button {
+            background-color: aqua;
+            text-align: center;
+            border-radius: 3px;
+            border-color: orange;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        #result {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="probel"></div>
+    <main>
+        <h1>Checkmate in 1 move</h1>
+        <h2>Task №2</h2>
+        <div>
+            <img src='https://i.postimg.cc/wTV6WmJq/2.png' width="400px" height="400px">
+            <p>White's move. How would you play?</p>
+
+            <textarea name="answer" id="answer"
+                placeholder="Enter the answer to the task: Write with a capital letter Example: Le4"
+                maxlength="3"></textarea>
+        </div>
+        <div class="promeshutok"></div>
+        <button onclick="checkAnswer()">Check the answer</button>
+        <p id="result"></p>
+        <button onclick="document.location.href='./train_1.html';">Previous task</button>
+        <button onclick="document.location.href='./train_3.html';">Next task</button>
+    </main>
+
+    <script>
+        function checkAnswer() {
+            const correctAnswer = 'Qe7';  // правильный ответ
+            const userAnswer = document.getElementById('answer').value.trim();
+
+            if (userAnswer === correctAnswer) {
+                document.getElementById('result').innerText = 'Right!';
+                document.getElementById('result').style.color = 'green';
+            } else {
+                document.getElementById('result').innerText = 'Wrong. Try again.';
+                document.getElementById('result').style.color = 'red';
+            }
+        }
+    </script>
+</body>
+
+</html>
